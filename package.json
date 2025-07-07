@@ -1,0 +1,39 @@
+{
+  "name": "legacy-device-debugger-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for debugging legacy devices behind proxies with custom header rewrite rules",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "legacy-device-debugger": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:unix": "tsc && chmod +x build/index.js",
+    "start": "node build/index.js",
+    "dev": "tsc && node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": [
+    "mcp",
+    "legacy-devices",
+    "proxy",
+    "debugging",
+    "header-rewrite"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.0",
+    "chalk": "^5.4.1",
+    "playwright": "^1.53.2",
+    "zod": "^3.25.73"
+  }
+}

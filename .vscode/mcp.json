@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "legacy-device-debugger": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["./build/index.js"]
+    }
+  }
+}
